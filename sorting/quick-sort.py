@@ -14,8 +14,8 @@ def quick_sort(collection):
 
 def main():
     print("=== Quick Sort (Algorithm) - An efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. It is still commonly used algorithm for sorting which is faster than its main competitors, merge-sort and heap-sort")
-    numbers = raw_input("Enter numbers separated by a comma: ")
-    unsorted = [int(item) for item in numbers.split(',')]
+    user_input = raw_input("Enter numbers separated by a comma: ")
+    unsorted = [int(item) for item in user_input.split(',')]
     print(quick_sort(unsorted))
 
 if __name__=='__main__':

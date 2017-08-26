@@ -13,8 +13,8 @@ def bubble_sort(collection):
 
 def main():
     print("=== Bubble Sort (Algorithm) - A simple algorithm that repeatedly steps through the list to be sorted. The algorithm is named for the way smaller or larger elements 'bubble' to the top of the list")
-    numbers = raw_input("Enter numbers separated by a comma: ")
-    unsorted = [int(item) for item in numbers.split(',')]
+    user_input = raw_input("Enter numbers separated by a comma: ")
+    unsorted = [int(item) for item in user_input.split(',')]
     print(bubble_sort(unsorted))
 
 if __name__=='__main__':

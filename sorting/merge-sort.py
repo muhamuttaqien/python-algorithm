@@ -37,8 +37,8 @@ def merge_sort(collection):
 
 def main():
     print("=== Merge Sort (Algorithm) - An efficient, general-purpose, comparison-based sorting algorithm which most implementations produce a stable sort. Merge-sort is a divide and conquer algorithm")
-    numbers = raw_input("Enter numbers separated by a comma: ")
-    unsorted = [int(item) for item in numbers.split(',')]
+    user_input = raw_input("Enter numbers separated by a comma: ")
+    unsorted = [int(item) for item in user_input.split(',')]
     print(merge_sort(unsorted))
 
 if __name__=='__main__':

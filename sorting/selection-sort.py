@@ -17,8 +17,8 @@ def selection_sort(collection):
 
 def main():
     print("=== Selection Sort (Algorithm) - A sorting algorithm that has thime complexity, making it inefficient on large lists, and generally performs worse than the other similar sort")
-    numbers = raw_input("Enter numbers separated by a comma: ")
-    unsorted = [int(item) for item in numbers.split(',')]
+    user_input = raw_input("Enter numbers separated by a comma: ")
+    unsorted = [int(item) for item in user_input.split(',')]
     print(selection_sort(unsorted))
 
 if __name__=='__main__':
