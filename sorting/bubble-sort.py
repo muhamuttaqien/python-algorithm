@@ -5,7 +5,9 @@ def bubble_sort(collection):
     for i in range(length-1, -1, -1):
         for j in range(i):
             if collection[j] > collection[j+1]:
-                collection[j], collection[j+1] = collection[j+1], collection[j]
+                collection[j], collection[j+1] = (
+                    collection[j+1], collection[j]
+                )
 
     return collection
 
